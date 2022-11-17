@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        mark {
+            background-color: green;
+        }
+    </style><!--Aqui é uma forma de utilizar o CSS e estilizar o texto.-->
+    <title>Semântica HTML5</title>
+</head>
+<body>
+    <h1>Como colocar o HTML de forma semântica.</h1>
+        <h2>Termo em Negrito/Destaque.</h2>
+            <p>Aqui temos um termo em <b>negrito</b>, usando a tag &lt;b&gt; (não semântico).</p>
+            <p>Aqui temos um termo em <strong>negrito</strong>, usando a tag &lt;strong&gt; (semântico).</p>
+        <h2>Termo em Itálico/Enfase.</h2>
+            <p>Aqui temos um termo em <i>itálico</i> usando a tag &lt;i&gt; (não semântico).</p>
+            <p>Aqui temos um termo com <em>ênfase</em>, usando a tag &lt;em&gt; (semântico).</p>
+        <h2>Marca texto.</h2>
+            <p>Aqui estamos colocando um <mark>texto marcado</mark>, utilizando a tag &lt;mark&gt;</p>
+        <h2>Colocando o texto pequeno.</h2>
+            <p>Aqui colocaremos o <small>texto pequeno</small> utilizando a tag &lt;small&gt;</p>
+        <h2>Colocando texto deletado ou taxado.</h2>
+            <p>Para colocar um <del>texto taxado</del> é só colocar entre a tag &lt;del&gt;</p>
+        <h2>Colocando um texto inserido ou sublinhado.</h2>
+            <p>Para colocar um <ins>texto sublinhado</ins> é só utilizar a tag &lt;ins&gt;</p>
+        <h2>Texto sobrescrito ou elevado.</h2>
+            <p>Colocando um texto sobrescrito utilizando a tag &lt;sup&gt; Ex: x<sup>10</sup>+4=y<sup>-10</sup></p>
+        <h2>Texto subscrito.</h2>
+            <p>Para colocar um texto subscrito é só utilizar a tag &lt;sub&gt; Ex: H<sub>2</sub>O</p>
+        <h2>Colocando um endereço.</h2>
+            <p>Aqui posso destacar um endereço como a tag &lt;address&gt; <address>R. Farid Moyses Elias, 438</address></p>
+        <h2>Colocando o código fonte com letras monoespaçadas.</h2>
+            <p>Para colocar as letras do mesmo tamanho para facilitar uma leitura de um código é utilizada a tag &lt;code&gt; como no exemplo: <code>documento.getElementById('teste');</code></p>
+        <h2>Código-fonte/Pré-formatação.</h2>
+            <p>Coloca-se a tag &lt;pre&gt; &lt;code&gt; como no exemplo abaixo:</p>
+                <pre>
+                    <code>
+                    &lt;pre&gt;
+                        &lt;code&gt;
+                            num = int(input('Digite um número'))
+                            if num % 2 == 0;
+                                print(f'O número {num} é PAR')
+                            else:
+                                print(f'O número {num} é IMPAR")
+                            print('Fim do programa')
+                        &lt;/code&gt;
+                    &lt;/pre&gt;
+                    </code>
+                </pre> <!--Detalhe que não precisa colocar em um parágrafo.-->
+        <h2>Colocando imagens.</h2>
+            <p>Acesse o <a href="../ex002/index2.html">link</a>.</p>
+            <p>Para colocar uma imagem é utilizado a tag &lt;img src="arquivo da imagem ou um link externo" alt="Descrição da imagem"&gt;</p>
+            <img src="../ex002/logo-html-300.png" alt="Logo de HTML">
+        <h2>Citações.</h2>
+            <p>Para fazer uma citação, será possível de duas formas: Uma na mesma linha utilizando a tag &lt;q&gt; que significa <em>quote</em> (citação em inglês) e outra em um bloco utilizando a tag &lt;blockquote cite="link da citação"&gt;, onde este cite dentro do blockquote não é obrigatório no código.</p>
+            <p>Ex 1: Assim como disse Manzano em seu livro <q>A menor unidade de dado manipulada por um computador chama-se bit</q> </p>
+            <p>EX 2: Manzano em seu livro fala:
+                <blockquote cite="https://www.google.com.br/books/edition/Algoritmos/qYywDwAAQBAJ?hl=pt-BR&gbpv=1&dq=programa%C3%A7%C3%A3o&printsec=frontcover">Os valores binários são eletronicamente usados pelo computador para representar estados eletromagnéticos dos circuitos que compõem a sua estrutura funcional e, assim, possibilitam representar dados do mundo exterior, além de estabelecer as bases de funcionamento da própriam máquina.</blockquote>
+            </p>
+        <h2>Criação de listas.</h2>
+            <p>Para criar uma lista ordenada é utilizada a tag &lt;ol&gt; (que sigifica ordered list) e para cada item da lista é colocada a tag &lt;li&gt; que significa list item(item da lista). O type é colocado de forma opcional para mudar o tipo do marcador que vai ordenar a lista (números, letras ou algarismos romanos).</p>
+                <ol type="I"> <!--O type pode ser 1, A, a, I, i.-->
+                    <li><del> Curso de Lógica de programação</del></li>
+                    <li>Curso HTML e Css</li>
+                    <li>Curso Javascript</li>
+                    <li>Curso Redes</li>
+                    <li>Curso PHP</li>
+                    <li>Curso Java</li>
+                    <li>Curso Segurança da informação</li>
+                </ol>
+            <p>Por outro lado temos também as listas não ordenadas, onde não é necessário uma ordem na lista. Utiliza-se a tag &lt;ul&gt; (Unordered List). O type pode ser circle, disc ou square.</p>
+                <ul type="square">
+                    <li>pão</li>
+                    <li>detergente</li>
+                    <li>saco de lixo</li>
+                    <li>cerveja</li>
+                    <li>carne</li>
+                    <li>sabão em pó</li>
+                    <li>carvão</li>
+                    <li>Tirar a carne para descongelar.</li>
+                </ul>
+            <dl>Lista de definições</dl><!--Funciona como um dicionário. Tem o termo e a descrição vai abaixo do termo.-->
+                <dt>Termo</dt>
+                <dd>Descrição do termo escrito acima.</dd>
+        <h2>Links Externos.</h2>
+            <p>Para acessar os materiais em pdf do curso do prof° Gustavo Guanabara, <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">clique aqui</a>.</p><!--O target="_blank" significa que vai abrir uma outra aba. Já o rel="external" está mostrando ao navegador que é um link externo.-->
+            <p>O rel pode ter vários atributos, entre eles:</p>
+            <ul>
+                <li>next = indica que o link é para a próxima parte do documento atual.</li>
+                <li>prev = indica que o link é para a parte anterior ao documento atual.</li>
+                <li>author = indica que é um link para o site do autor do artigo atual.</li>
+                <li>external = indica que é um link para outro site que não faz parte do site construído.</li>
+                <li>nofollow = indica para o mecanismo de busca que não tem nada a ver um site com o outro.</li>
+            </ul>
+            <p>As vezes um site a ser conectado está em outro idioma, e para indicar uma tradução para o navegador, coloca-se a tag &lt;hreflan="en"&gt;. Direcionar para <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" rel="external" hreflang="en">W3Schools.</a></p>
+        <h2>Links Internos.</h2>
+            <p><a href="pg002.html">Aqui</a> você vai para a segunda página.</p>
+            <p>Aqui é para ir para a página de <a href="../ex001/index1.html"><strong>Símbolos.</strong></a></p><!--O "../" mostra que está voltando uma pasta.-->
+        <h2>Links para download de arquivos.</h2>
+        <ul>
+            <li><a href="arquivo para download/Edital.pdf" download="Edital.pdf" type="application/pdf">Baixar aqui o PDF</a></li><!--O type é pesquisado no iana.org, lá tem varias media types e serve para indicar para o navegador que tipo de arquivo está sendo baixado..-->
+            <li><a href="arquivo para download/Edital.rar" download="Edital.rar" type="application/rar">Baixar o arquivo compactado</a></li>
+        </ul>
+</body>
+</html>
