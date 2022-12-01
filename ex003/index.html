@@ -105,5 +105,14 @@
             <li><a href="arquivo para download/Edital.pdf" download="Edital.pdf" type="application/pdf">Baixar aqui o PDF</a></li><!--O type é pesquisado no iana.org, lá tem varias media types e serve para indicar para o navegador que tipo de arquivo está sendo baixado..-->
             <li><a href="arquivo para download/Edital.rar" download="Edital.rar" type="application/rar">Baixar o arquivo compactado</a></li>
         </ul>
+        <h2>Imagem Dinâmica.</h2>
+        <p>Aumente e diminua a lateral da janela do seu navegador.</p>
+        <p>Este tipo de tag, é uma forma de adaptar o tamanho da imagem de acordo com o dispositivo que o usuário está navegando, seja ele um computador desktop, um tablet ou um smartphone.</p>
+        <p>Dentro da tag &lt;picture&gt; é colocado um &lt;img&gt; com a imagem principal. Logo depois acima é colocado a tag &lt;source:media:type&gt;, onde terá o media="(max-width: px)" para colocar a partir de qual tamanho será mudado a imagem; srcset="diretório da nova imagem com o arquivo que será mudado"; e o type="media type com o formato do arquivo".</p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="Imagem/imagem-p.png" type="image/png"><!--Tamanho pequeno-->
+            <source media="(max-width: 1050px )" srcset="Imagem/imagem-m.png" type="image/png"><!--Tamanho médio-->
+            <img src="Imagem/imagem-g.png" alt="Imagem Flexível"><!--Tamanho grande-->
+        </picture><!--O tamanho das imagens deve obedecer a ordem, no caso, do tamanho grande até o pequeno.-->
 </body>
 </html>
