@@ -118,11 +118,19 @@
         </picture><!--O tamanho das imagens deve obedecer a ordem, no caso, do tamanho grande até o pequeno.-->
         <h2>Colocando Áudios</h2>
             <p>Para colocar audios, pode ser de duas formas. A primeira:</p>
-            <audio controls>
-                <source src="media/guanacast-33.mp3" type="audio/mpeg"> 
+            <audio controls preload="auto"><!--O preload pode ser auto (Para carregar automaticamente), metadata (carrega apenas as informações do arquivo) e none (Só vai cerregar quando o usuário a pertar o botão do play)-->
+                <source src="media/guanacast-33.mp3" type="audio/mpeg"><!--O áudio pode ser em mp3 ou mpeg, ogg e wav, inclusive posso colocar os três para compatibilidade com diversos navegadores.-->
             </audio>
             <p>Ou:</p>
             <audio src="media/guanacast-33.mp3" controls></audio>
             <p>Verificar no código</p>
+        <h2>Colocando video de servidor local</h2>
+        <video height="400" poster="Imagem/foto-city.jpg" controls>
+            <source src="media/city.mp4" type="video/mp4">
+            <source src="media/city.ogv" type="video/ogg">
+            <source src="media/city.webm" type="video/webm">
+            <p>Seu navegador não é compatível com reprodução de videos.</p>
+        </video><!--É colocado de vários formatos, para a compatibilidade em vários navegadores.-->
+
 </body>
 </html>
