@@ -83,11 +83,13 @@
                     <li>carvão</li>
                     <li>Tirar a carne para descongelar.</li>
                 </ul>
-            <dl>Lista de definições</dl><!--Funciona como um dicionário. Tem o termo e a descrição vai abaixo do termo.-->
-                <dt>Termo</dt>
-                <dd>Descrição do termo escrito acima.</dd>
+        <h2>Lista de definições.</h2>
+            <dl><!--Funciona como um dicionário. Tem o termo e a descrição vai abaixo do termo.-->
+            <dt>Termo</dt>
+            <dd>Descrição do termo escrito acima.</dd>
+            </dl>
         <h2>Links Externos.</h2>
-            <p>Para acessar os materiais em pdf do curso do prof° Gustavo Guanabara, <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">clique aqui</a>.</p><!--O target="_blank" significa que vai abrir uma outra aba. Já o rel="external" está mostrando ao navegador que é um link externo.-->
+            <p>Para acessar os materiais em pdf do curso do prof° Gustavo Guanabara, <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="noopener">clique aqui</a>.</p><!--O target="_blank" significa que vai abrir uma outra aba. Já o rel="external" está mostrando ao navegador que é um link externo.-->
             <p>O rel pode ter vários atributos, entre eles:</p>
             <ul>
                 <li>next = indica que o link é para a próxima parte do documento atual.</li>
@@ -96,7 +98,7 @@
                 <li>external = indica que é um link para outro site que não faz parte do site construído.</li>
                 <li>nofollow = indica para o mecanismo de busca que não tem nada a ver um site com o outro.</li>
             </ul>
-            <p>As vezes um site a ser conectado está em outro idioma, e para indicar uma tradução para o navegador, coloca-se a tag &lt;hreflan="en"&gt;. Direcionar para <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" rel="external" hreflang="en">W3Schools.</a></p>
+            <p>As vezes um site a ser conectado está em outro idioma, e para indicar uma tradução para o navegador, coloca-se a tag &lt;hreflan="en"&gt;. Direcionar para <a href="https://www.w3schools.com/html/html_elements.asp" target="_blank" rel="noopener" hreflang="en">W3Schools.</a></p>
         <h2>Links Internos.</h2>
             <p><a href="pg002.html">Aqui</a> você vai para a segunda página.</p>
             <p>Aqui é para ir para a página de <a href="../ex001/index1.html"><strong>Símbolos.</strong></a></p><!--O "../" mostra que está voltando uma pasta.-->
@@ -114,5 +116,12 @@
             <source media="(max-width: 1050px )" srcset="Imagem/imagem-m.png" type="image/png"><!--Tamanho médio-->
             <img src="Imagem/imagem-g.png" alt="Imagem Flexível"><!--Tamanho grande-->
         </picture><!--O tamanho das imagens deve obedecer a ordem, no caso, do tamanho grande até o pequeno.-->
+        <h2>Colocando Áudios</h2>
+            <p>Para colocar audios, pode ser de duas formas. A primeira:</p>
+            <audio controls>
+                <source src="media/guanacast-33.mp3" type="audio/mpeg"> 
+            </audio>
+            <p>Ou:</p>
+            <audio src="media/guanacast-33.mp3" controls></audio>
 </body>
 </html>
