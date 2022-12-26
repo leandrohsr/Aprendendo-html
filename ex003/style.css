@@ -1,7 +1,14 @@
 @charset "UTF-8";
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}/*Configurações globais*/
+
 body {
     background-color: lightgreen;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: justify;
 }
+
+h1{
+    background-image: linear-gradient(to right, white, #81F760, #47F517, #38C211, #22750B, #3D752E);
+}/*Colocando degradê ou gradiente em CSS.*/
